@@ -1,0 +1,13 @@
+const express = require('express');
+const app = express();
+const port = 80;
+
+// Define a route for the home page ("/")
+app.get('/', (req, res) => {
+  res.send('Hello World! My Node.js server is running.');
+});
+
+// Start the server and listen on the defined port
+app.listen(port, () => {
+  console.log(`Server listening at http://localhost:${port}`);
+});
